@@ -9,4 +9,8 @@
     <Compile Remove="2pointerPalindrom.cs" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Remove="sequence in string.c" />
+  </ItemGroup>
+
 </Project>

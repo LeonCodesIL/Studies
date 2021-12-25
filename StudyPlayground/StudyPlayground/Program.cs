@@ -6,7 +6,7 @@ namespace StudyPlayground
     {
         static void Main(string[] args)
         {
-            string text = File.ReadAllText("../../../TextFile2.txt");
+            
             
 
         }
