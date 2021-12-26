@@ -1,42 +1,32 @@
-﻿# include <stdio.h>
+﻿#include <stdio.h>
 
 #define IN 1
 #define OUT 0
 void main()
 {
-	int c;
-	int state = 0;
-	int maxLength, curLength, pnum, startPos, curPos, maxPos, temp;
-	temp = maxPos = curPos = startPos = curLength = maxLength = 1;
-	state = 0;
+	char c;
+	int counter, num_of_strings;
+	counter = num_of_strings = 0;
 
-	while (scanf_s("%d", &c) == 1)
-	{
-		if (state == 0)
-		{
-			pnum = c;
-			state = 1;
-			continue;
+	while ((c = getchar()) != EOF) {
+		printf("%c\n", c);
+		if (c == 'a') {
+			counter = 0;
+			counter++;
 		}
-		curPos++;
-		if (c > pnum)
-		{
-			curLength++;
+		else if (c == 'b' && counter == 1) {
+			counter++;
 		}
-		else
-		{
-			curLength = 1;
-			startPos = curPos;
+		else if (c == 'c' && counter == 2) {
+			counter++;
 		}
+		else { counter = 0; }
 
-		if (curLength > maxLength)
-		{
-			maxLength = curLength;
-			maxPos = startPos;
+		if (counter == 3) {
+			counter = 0;
+			num_of_strings++;
 		}
-		pnum = c;
 	}
-
-	printf("the longest arrow is %d starting at %d", maxLength, maxPos);
+	printf("the string abc has occured %d times.", num_of_strings);
 
 }
