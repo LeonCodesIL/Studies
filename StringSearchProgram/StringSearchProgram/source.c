@@ -1,6 +1,6 @@
-#include <iostream>
-#include "StringProgramFunctions.h"
 
+#include "StringProgramFunctions.h"
+#include <stdio.h>
 
 
 int main()
@@ -9,6 +9,5 @@ int main()
 	char s[LINE];
 	result = getline(s, LINE);
 	printf("number of chars: %d", result);
-
-
+	
 }

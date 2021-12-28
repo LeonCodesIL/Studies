@@ -1,3 +1,4 @@
+
 #include "StringProgramFunctions.h"
 #include <stdio.h>
 
@@ -16,6 +17,8 @@ int getline(char s[], int lim) {
 	return n;
 }
 
-int getword(char w[], int lim) {
 
+int getword(char w[], int lim) {
+	return 0;
 }
+
