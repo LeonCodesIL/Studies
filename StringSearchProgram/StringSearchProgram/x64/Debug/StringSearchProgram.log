@@ -1,2 +1,4 @@
-﻿  StringProgramFunctions.c
+﻿  source.c
+C:\Users\Leon\Desktop\CsEducation\StringSearchProgram\StringSearchProgram\source.c(9,7): warning C4101: 'option': unreferenced local variable
+C:\Users\Leon\Desktop\CsEducation\StringSearchProgram\StringSearchProgram\source.c(8,7): warning C4101: 'word': unreferenced local variable
   StringSearchProgram.vcxproj -> C:\Users\Leon\Desktop\CsEducation\StringSearchProgram\x64\Debug\StringSearchProgram.exe

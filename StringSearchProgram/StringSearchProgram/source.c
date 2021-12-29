@@ -5,9 +5,17 @@
 
 int main()
 {
-	int result;
-	char s[LINE];
-	result = getline(s, LINE);
-	printf("number of chars: %d", result);
+	char word[STR];
+	char option;
+	char str[60] ;
+	FILE *file;
+	fopen_s(&file, "text.txt", "r");
+	if (file != 0) {
+		fgets(str, EOF, file);
+	}
+
+	//getword(word, STR);
 	
+//	printf("%s", word);
+
 }
